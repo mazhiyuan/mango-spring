@@ -7,3 +7,9 @@ Notes:
 --> This tool doesn't have a operate 'insert' , use 'save' instead of
 --> This tool also doesn't the operate 'group' , this would fix one day , or u fix it if u want and share the word to me.
 --> Read Mazhiyuan.class and MangoTest.class ,u can know how to use this tool , the details will public later in my blog mazhiyuan.iteye.com
+
+about the name 'mango' 
+mango is not the fruit ‘mango’,it comes from mazhiyuan + mongo = mango
+The almost of ideas from the amazing project jongo (jongo.org) , I review some apis and offer some methods we use often,and make it integrate with spring,
+u can use the properties files to change the configuration of mongodb softly.
+
