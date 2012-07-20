@@ -10,6 +10,6 @@ Notes:
 
 about the name 'mango' 
 mango is not the fruit ‘mango’,it comes from mazhiyuan + mongo = mango
-Most of ideas is from the amazing project jongo (jongo.org) , I review some apis and offer some methods we use often,and make it integrate with spring,
+Most of ideas are from the amazing project --  jongo (jongo.org) , I review some apis , offer some methods that we often use ,and make it integrate with spring,
 u can use the properties files to change the configuration of mongodb softly.
 
