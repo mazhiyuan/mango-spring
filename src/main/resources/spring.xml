@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="collection" class="org.mango.MangoCollection" init-method="init" destroy-method="close">
+        <property name="mango">
+            <ref bean="mango"/>
+        </property>
+        <property name="collection" value="test"/>
+        <property name="clazz" value="org.mango.Mazhiyuan"/>
+    </bean>
+    <bean id="mango" class="org.mango.Mango" init-method="init" destroy-method="close">
+        <property name="driver">
+            <ref bean="driver"/>
+        </property>
+    </bean>
+    <bean id="driver" class="org.mango.MangoDriver" init-method="init" destroy-method="close">
+        <property name="db" value="local"/>
+        <property name="driver" ref = "config"/>
+    </bean>
+    <bean id="config" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location">
+            <value>classpath:driver.properties</value>
+        </property>
+    </bean>
+</beans>

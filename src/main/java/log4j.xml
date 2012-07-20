@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d [%15t] [%30.30C{1}] [%3L] %6p - %m %n"/>
+            <!-- param name="ConversionPattern" value="%d [%20t] [%7r] [%45C{1}] [%25M] [%3L] %6p - %30.30c - %m %n" / -->
+        </layout>
+    </appender>
+
+    <appender name="LogFile" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/logs/mango"/>
+        <param name="Append" value="true"/>
+        <param name="DatePattern" value="'_'yyyy-MM-dd'.log'"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %p - %m |||| %l%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="INFO"/>
+        <appender-ref ref="stdout"/>
+    </root>
+
+</log4j:configuration> 
