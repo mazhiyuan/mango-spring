@@ -4,6 +4,6 @@ e.g.  colloection.findOne("{'name':'mazhiyuan'}").as()
 Notes:
 --> The Model class needs extends the super class Madel.class
 --> The Model class needs a default constructor
---> This tool doesn't have a operate 'insert' , user 'save' instead
+--> This tool doesn't have a operate 'insert' , use 'save' instead of
 --> This tool also doesn't the operate 'group' , this would fix one day , or u fix it if u want and share the word to me.
 --> Read Mazhiyuan.class and MangoTest.class ,u can know how to use this tool , the details will public later in my blog mazhiyuan.iteye.com
