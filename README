@@ -6,7 +6,7 @@ Notes:
 --> The Model class needs a default constructor
 --> This tool doesn't have a operate 'insert' , use 'save' instead of
 --> This tool also doesn't the operate 'group' , this would fix one day , or u fix it if u want and share the word to me.
---> Read Mazhiyuan.class and MangoTest.class ,u can know how to use this tool , the details will public later in my blog mazhiyuan.iteye.com
+--> Read Mazhiyuan.class and MangoTest.class ,u can know how to use this tool , the details will publish later in my blog mazhiyuan.iteye.com
 
 about the name 'mango' 
 mango is not the fruit ‘mango’,it comes from mazhiyuan + mongo = mango
