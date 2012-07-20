@@ -8,6 +8,7 @@
             <ref bean="mango"/>
         </property>
         <property name="collection" value="test"/>
+        <!-- there needs the full path of the model class , it's not a good idea , but I can't find a better way to solve this -->
         <property name="clazz" value="org.mango.Mazhiyuan"/>
     </bean>
     <bean id="mango" class="org.mango.Mango" init-method="init" destroy-method="close">
